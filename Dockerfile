@@ -1,5 +1,5 @@
 
-FROM /bingliunpu/pytorch1.8.1-py38-cuda11.1-cudnn8-ubuntu18.04
+FROM bingliunpu/pytorch1.8.1-py38-cuda11.1-cudnn8-ubuntu18.04
 
 ENV TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0+PTX"
 ENV TORCH_NVCC_FLAGS="-Xfatbin -compress-all"
