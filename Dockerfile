@@ -12,8 +12,4 @@ RUN apt-get update && apt-get install -y git ninja-build libglib2.0-0 libsm6 lib
 # Install xtcocotools
 RUN pip install cython
     && pip install xtcocotools
-    && pip install numpy
-    && pip install tqdm
-    && pip install matplotlib
-    && pip install pycocotools
-    && pip install opencv-python
+
