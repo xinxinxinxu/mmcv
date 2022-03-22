@@ -8,8 +8,4 @@ ENV CMAKE_PREFIX_PATH="$(dirname $(which conda))/../"
 RUN apt-get update && apt-get install -y git ninja-build libglib2.0-0 libsm6 libxrender-dev libxext6 libgl1-mesa-glx\
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
-# Install xtcocotools
-RUN pip install cython
-    && pip install xtcocotools
-
+    
