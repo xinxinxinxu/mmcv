@@ -1,5 +1,5 @@
 
-FROM bingliunpu/pytorch1.8.1-py38-cuda11.1-cudnn8-ubuntu18.04
+FROM jacklove2022/pytorch1.8-gpu
 
 ENV TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0+PTX 8.0 9.0"
 ENV TORCH_NVCC_FLAGS="-Xfatbin -compress-all"
